@@ -1,3 +1,58 @@
-.flex-container{
-    display: flex;
+*{
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.container-1 {
+  display: flex;
+  background-color: #2D2D2D;
+  justify-content: space- between;
+  align-items: center;
+  color:white;
+
+}
+.navbar {
+  font-family: "Overpass";
+  margin: 0;
+  max-height: 72px;
+  min-height: 72px;
+  display: flex;
+}
+
+.nav-items-ls {
+  font-size: 14px;
+  
+
+}
+
+.nav-items-rs {
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.ef-nav-logo{
+
+  max-width: 72px;
+  max-height: 72px;
+}
+
+video {
+  min-width:100%;
+  min-height: 100%;
+  display:flex;
 }
