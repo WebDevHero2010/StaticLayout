@@ -97,9 +97,10 @@ video {
 
 .redApplyBtn {
   background-color: #e33e42;
+  border-left:white solid 4px;
 }
 
 .blueSchBtn {
   background: #338cb8;
-  margin: 0;
+  border-left:white solid 4px;
 }
