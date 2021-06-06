@@ -1,5 +1,5 @@
-*{
-  box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -9,35 +9,53 @@ body {
 }
 
 .container-1 {
+  background-color: #2d2d2d;
+  justify-content: space-between;
   display: flex;
-  background-color: #2D2D2D;
-  justify-content: space- between;
   align-items: center;
-  color:white;
-
-}
-.navbar {
-  font-family: "Overpass";
-  margin: 0;
+  color: white;
   max-height: 72px;
   min-height: 72px;
+}
+
+nav {
+  font-family: "Overpass", serif;
+  letter-spacing: 0.025em;
   display: flex;
+  align-items: center;
 }
 
-.nav-items-ls {
-  font-size: 14px;
-  
-
+.elevenFiftyTitle {
+  display:flex;
+  line-height: 1;
+  align-items: center;
+  margin: 20px;
+  font-size: 20px;
+  font-family: "Crimson Text", serif;
+  cursor: pointer;
 }
 
-.nav-items-rs {
+.leftNav {
+  display:flex;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
   font-size: 14px;
+  font-weight: bold;
+  font-family: "Overpass", serif;
 }
 
 ul {
   list-style: none;
-  display: flex;
-  align-items: center;
+  cursor: pointer;
+}
+
+li {
+  padding: 20px 20px;
+  line-height: 72px;
+  height: 72;
 }
 
 a {
@@ -45,14 +63,43 @@ a {
   text-decoration: inherit;
 }
 
-.ef-nav-logo{
-
+.ef-nav-logo {
+  display: flex;
+  cursor: pointer;
   max-width: 72px;
   max-height: 72px;
 }
 
 video {
-  min-width:100%;
+  min-width: 100%;
   min-height: 100%;
-  display:flex;
+  display: flex;
+}
+
+.course-info {
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 12px;
+}
+
+.course-info h1 {
+  color: #348db9;
+  font-size: 60px;
+  font-family: "Overpass", Helvetica, Arial, sans-serif;
+}
+
+.course-cards-flex {
+  margin: 0;
+  justify-content: center;
+  display: flex;
+}
+
+.redApplyBtn {
+  background-color: #e33e42;
+}
+
+.blueSchBtn {
+  background: #338cb8;
+  margin: 0;
 }

@@ -11,55 +11,62 @@
     </title>
 
     <!-- Eleven Fifty - Icon Picture for Browser Tab-->
-    <link rel="Icon" href="https://elevenfifty.org/wp-content/uploads/2019/03/cropped-sheild_favicon2-192x192.png">
+    <link
+      rel="Icon"
+      href="https://elevenfifty.org/wp-content/uploads/2019/03/cropped-sheild_favicon2-192x192.png"
+    />
 
     <!--Link to css sheets-->
     <link rel="stylesheet" href="index.css" />
 
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Overpass&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Overpass&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
     <header class="container-1">
-      <!--Navbar-->
-      <div class="navbar">
-        <!--ElevenFiftyLogo Image located in top left hand corner of navbar-->
-        <img
-          class="ef-nav-logo"
-          src="/StaticLayout/assets/mobile-shield.png"
-          alt="Eleven Fifty Academy Logo"
-          srcset=""
-        />
+      <div class="leftNav">
+        <!--Eleven Fifty Logo for Navbar-->
+        <img class="ef-nav-logo" src="/StaticLayout/assets/mobile-shield.png"
+        alt="Eleven Fifty Academy Logo"
+      />
+          <!--Eleven Fifty Title Text-->
+    <div class="elevenFiftyTitle">Eleven Fifty Academy</div>
+  </div>
 
-        <ul class="navbar-items-ls">
-          <li><a href="">ElevenFiftyLogo</a></li>
-          <li><a href="">Eleven Fifty Academy</a></li>
-        </ul>
-
-        <ul class="navbar-items-rs">
+    </nav>
+      <!--Navbar/Navigation-->
+      <nav>
+        <ul class="navbar-items">
           <li><a href="">COURSES</a></li>
           <li><a href="">ADMISSIONS</a></li>
           <li><a href="">VETERANS</a></li>
           <li><a href="">ABOUT</a></li>
           <li><a href="">CAMPUS</a></li>
           <li><a href="">EMPLOYERS</a></li>
-          <li><a href="">SearchLogo</a></li>
-          <li><a href="">SCHEDULE A MEETING</a></li>
-          <li><a href="">APPLY NOW</a></li>
+          <!--Search/Magnifying Glass ICON Location-->
+          <li class="searchICON">
+            <a href=""><img src="/StaticLayout/assets/search.svg" alt="" /></a>
+          </li>
+          <!--Blue & Red Color Buttons-->
+          <li class="blueSchBtn">
+            <a href="">SCHEDULE A MEETING</a>
+          </li>
+          <li class="redApplyBtn">
+            <a href="">APPLY NOW</a>
+          </li>
         </ul>
-      </div>
     </header>
 
     <!--Background Video & 'Attend a Free Intro Course! Banner'-->
@@ -69,7 +76,13 @@
     </div>
 
     <!--COURSE INFORMATION SECTION-->
-    <div></div>
+    <div class="course-info">
+      <h1>COURSE INFORMATION</h1>
+      <div class="course-cards-flex">
+        <div class="infoCard-1"></div>
+      </div>
+    </div>
+
     <!--Trusted Partners and Affiliates Section-->
     <div></div>
     <!--ALUMNI and Playable Youtube Video-->
