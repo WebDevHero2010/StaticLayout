@@ -57,6 +57,10 @@ li {
   line-height: 32px;
 }
 
+li:hover {
+  background-color: black;
+}
+
 a {
   color: inherit;
   text-decoration: inherit;
@@ -66,6 +70,10 @@ a {
   display: flex;
   cursor: pointer;
   max-width: 72px;
+}
+
+.ef-nav-logo:hover {
+  background-color: rgb(186 29 34);
 }
 
 .video-sec {
@@ -81,10 +89,9 @@ a {
   display: flex;
 }
 
-.black-box{
-  position:absolute;
+.black-box {
+  position: absolute;
 }
-
 
 .course-info {
   background-color: #efefef;
@@ -115,10 +122,65 @@ a {
   background-color: #e33e42;
   border-left: white solid 4px;
   align-items: center;
+  transition: 0.3s;
+  transition-timing-function: linear;
 }
 
 .blueSchBtn {
   background: #338cb8;
   border-left: white solid 4px;
   align-items: center;
+  transition: 0.3s;
+  transition-timing-function: linear;
+}
+
+.blueSchBtn:hover {
+  background-color: #51abd7;
+  color: white;
+}
+
+.redApplyBtn:hover {
+  background-color: rgb(186 29 34);
+}
+
+#overlay-1 {
+  font-family: "overpass";
+  top: 50%;
+  left: 20%;
+  right: 20%;
+  float: left;
+  width: auto;
+  text-align: left;
+  padding: 0.25em 22px;
+  margin-bottom: 0.3em;
+  background-color: black;
+  opacity: 0.8;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 55px;
+  color: white;
+  position: absolute;
+  z-index: 1;
+}
+
+#overlay-2 {
+  font-family:"overpass" ,sans-serif;
+  color:white;
+  font-size:32px;
+  font-weight: bold;
+  background-color:#E33E42;
+  transition: 0.3s;
+  transition-timing-function: linear;
+  margin: 0px 630px 7px 0px;
+  padding: 12.48px 20.8px 10.88px ;
+  top: 71.5%;
+  left: 20%;
+  right: 20%;
+  z-index: 2;
+  position:absolute;
+}
+
+#overlay-2:hover {
+  background-color: rgb(186 29 34);
 }
