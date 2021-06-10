@@ -6,42 +6,36 @@ body {
   margin: 0;
 }
 
-.container-1 {
-  background-color: #2d2d2d;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  align-self: center;
-  color: white;
-  max-height: 72px;
-}
-
 nav {
   font-family: "Overpass", serif;
+  width: 100%;
   letter-spacing: 0.025em;
+  position: fixed;
+  background-color: #2d2d2d;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  color: white;
+  max-height: 72px;
+  z-index: 1000;
+}
+.leftNav {
+  align-items: flex-start;
+  display: flex;
 }
 
 .elevenFiftyTitle {
-  display: flex;
-  padding-top: 5px;
-  line-height: 1;
-  align-items: center;
-  align-items: flex-start;
   margin: 20px;
+  text-align: center;
   font-size: 20px;
   font-family: "Crimson Text", serif;
   cursor: pointer;
 }
 
-.leftNav {
-  display: flex;
-}
-
 .navbar-items {
   display: flex;
-  align-items: center;
+  line-height: 72px;
+  text-align: center;
   font-size: 14px;
   font-weight: bold;
   font-family: "Overpass", serif;
@@ -53,8 +47,8 @@ ul {
 }
 
 li {
-  padding: 20px 20px;
-  line-height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 li:hover {
@@ -89,33 +83,91 @@ a {
   display: flex;
 }
 
-.black-box {
-  position: absolute;
+.course-section {
+  font-family: "overpass";
+  background-color: #efefef;
+  padding-top: 85px;
+  padding-bottom: 85px;
 }
 
 .course-info {
-  background-color: #efefef;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 0;
-  margin-bottom: 0.2em;
-}
-
-.course-info h1 {
-  color: #348db9;
-  font-weight: bolder;
-  font-family: "overpass";
+  background-color: #efefef;
+  margin-top: auto;
   font-size: 60px;
+  color: #348db9;
 }
 
-.course-cards-flex {
-  margin: 0;
-  justify-content: center;
+.row {
   display: flex;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 21px;
+  line-height: 31.5px;
+  width: 380px;
+  height: 418.65px;
+  margin-right: 1.3%;
+  border: white;
+  background-color: white;
+  flex-direction: column;
+  position: relative;
+}
+
+.card p {
+  font-size: 21px;
+  letter-spacing: 0.025em;
+  margin: 0 0 1.75em;
+  line-height: 1.4;
+  padding: 0;
+}
+
+.card h2 {
+  padding: 0;
+  letter-spacing: 0.05em;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.1;
+  font-size: 36px;
+  margin: 0 0 0.65em;
+  font-family: "Overpass", serif;
+}
+
+.red-button {
+  font-family: "overpass", serif;
+  font: 21px;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  background-color: #e33e42;
+  padding-left: 10.5px;
+  padding-right: 10.5px;
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 52.5px;
+  line-height: 31.5px;
+  position: absolute;
 }
 
 .searchICON {
-  padding-top: 30px;
+  align-items: center;
+  display: flex;
+  pointer-events: none;
 }
 
 .redApplyBtn {
@@ -124,6 +176,11 @@ a {
   align-items: center;
   transition: 0.3s;
   transition-timing-function: linear;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .blueSchBtn {
@@ -132,6 +189,11 @@ a {
   align-items: center;
   transition: 0.3s;
   transition-timing-function: linear;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .blueSchBtn:hover {
@@ -144,9 +206,11 @@ a {
 }
 
 #overlay-1 {
+  display: flex;
+  flex-wrap: wrap-reverse;
   font-family: "overpass";
   top: 50%;
-  left: 20%;
+  left: 30%;
   right: 20%;
   float: left;
   width: auto;
@@ -154,6 +218,8 @@ a {
   padding: 0.25em 22px;
   margin-bottom: 0.3em;
   background-color: black;
+  max-width: 974.55px;
+  max-height: 98.5px;
   opacity: 0.8;
   font-weight: 900;
   text-transform: uppercase;
@@ -165,20 +231,24 @@ a {
 }
 
 #overlay-2 {
-  font-family:"overpass" ,sans-serif;
-  color:white;
-  font-size:32px;
+  font-family: "overpass", sans-serif;
+  display: flex;
+  color: white;
+  font-size: 32px;
+  justify-content: center;
   font-weight: bold;
-  background-color:#E33E42;
+  max-width: 297.05px;
+  max-height: 55.34px;
+  background-color: #e33e42;
   transition: 0.3s;
   transition-timing-function: linear;
-  margin: 0px 630px 7px 0px;
-  padding: 12.48px 20.8px 10.88px ;
-  top: 71.5%;
-  left: 20%;
+  margin: 0px 10px 7px 0px;
+  padding: 12.48px 20.8px 10.88px;
+  top: 60.5%;
+  left: 30%;
   right: 20%;
   z-index: 2;
-  position:absolute;
+  position: absolute;
 }
 
 #overlay-2:hover {
