@@ -207,7 +207,6 @@ a {
 
 #overlay-1 {
   display: flex;
-  flex-wrap: wrap-reverse;
   font-family: "overpass";
   top: 50%;
   left: 30%;
@@ -215,11 +214,11 @@ a {
   float: left;
   width: auto;
   text-align: left;
-  padding: 0.25em 22px;
-  margin-bottom: 0.3em;
+  padding: .25em 22px;
+  margin-bottom: .3em;
   background-color: black;
   max-width: 974.55px;
-  max-height: 98.5px;
+  max-height: 170.5px;
   opacity: 0.8;
   font-weight: 900;
   text-transform: uppercase;
@@ -244,7 +243,7 @@ a {
   transition-timing-function: linear;
   margin: 0px 10px 7px 0px;
   padding: 12.48px 20.8px 10.88px;
-  top: 60.5%;
+  top: 62.5%;
   left: 30%;
   right: 20%;
   z-index: 2;
