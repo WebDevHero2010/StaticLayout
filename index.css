@@ -60,13 +60,27 @@ a {
   text-decoration: inherit;
 }
 
-.ef-nav-logo {
+.leftNavBGC {
   display: flex;
-  cursor: pointer;
-  max-width: 72px;
+  width: 72px;
+  height: 72px;
+  background-color: #e33e42;
+  align-items: center;
 }
 
-.ef-nav-logo:hover {
+.ef-nav-logo {
+  display: block;
+  height: 46px;
+  width: 33px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.leftNavBGC:hover {
+  transition: 0.3s;
+  transition-timing-function: linear;
   background-color: rgb(186 29 34);
 }
 
@@ -92,7 +106,6 @@ a {
 
 .course-info {
   text-align: center;
-  padding: 0;
   background-color: #efefef;
   margin-top: auto;
   font-size: 60px;
@@ -127,6 +140,7 @@ a {
 
 .card p {
   font-size: 21px;
+  color: #676767;
   letter-spacing: 0.025em;
   margin: 0 0 1.75em;
   line-height: 1.4;
@@ -134,12 +148,13 @@ a {
 }
 
 .card h2 {
+  display: block;
   padding: 0;
   letter-spacing: 0.05em;
   font-style: normal;
   font-weight: 800;
   line-height: 1.1;
-  font-size: 36px;
+  font-size: 32px;
   margin: 0 0 0.65em;
   font-family: "Overpass", serif;
 }
@@ -166,7 +181,6 @@ a {
 
 .searchICON {
   align-items: center;
-  display: flex;
   pointer-events: none;
 }
 
@@ -214,8 +228,8 @@ a {
   float: left;
   width: auto;
   text-align: left;
-  padding: .25em 22px;
-  margin-bottom: .3em;
+  padding: 0.25em 22px;
+  margin-bottom: 0.3em;
   background-color: black;
   max-width: 974.55px;
   max-height: 170.5px;
@@ -251,5 +265,17 @@ a {
 }
 
 #overlay-2:hover {
+  background-color: rgb(186 29 34);
+}
+
+.card:hover,
+.red-button:hover {
+  background-color: #d5d4d4;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-timing-function: linear;
+}
+
+.red-button:hover {
   background-color: rgb(186 29 34);
 }
