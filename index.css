@@ -57,6 +57,7 @@ li:hover {
 
 .fas {
   display: block;
+  justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 120%;
@@ -108,7 +109,7 @@ a {
   display: flex;
 }
 
-.course-section {
+#course-section {
   font-family: "overpass";
   background-color: #efefef;
   padding-top: 85px;
@@ -172,12 +173,13 @@ a {
 }
 
 .red-button {
+  display: block;
   display: flex;
   justify-content: center;
   font-family: "overpass", serif;
-  text-align: center;
   font: 21px;
   align-items: center;
+  font-style: normal;
   font-weight: 700;
   color: white;
   background-color: #e33e42;
@@ -201,6 +203,7 @@ a {
 }
 
 .redApplyBtn {
+  display: block;
   background-color: #e33e42;
   border-left: white solid 4px;
   align-items: center;
@@ -291,4 +294,29 @@ a {
   cursor: pointer;
   transition: 0.3s;
   transition-timing-function: linear;
+}
+
+.down-arrow {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+}
+
+.down-arrow i {
+  z-index: 20;
+  font-size: 65.53px;
+  transition: 0.3s;
+  transition-timing-function: linear;
+  color: white;
+  margin: auto;
+}
+
+.down-arrow i:hover {
+  cursor: pointer;
+  color: #e33e42;
+}
+
+.red-button i {
+  align-items: center;
+  size: 20px;
 }
