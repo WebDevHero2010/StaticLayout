@@ -25,6 +25,7 @@ nav {
 }
 
 .elevenFiftyTitle {
+  display:block;
   margin: 20px;
   text-align: center;
   font-size: 20px;
