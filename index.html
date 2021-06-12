@@ -16,6 +16,14 @@
       href="https://elevenfifty.org/wp-content/uploads/2019/03/cropped-sheild_favicon2-192x192.png"
     />
 
+    <!--Font Awesome Icons Source-->
+    <script
+      src="https://kit.fontawesome.com/ae7fc9dde7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Dashicons Source-->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <!--Link to css sheets-->
     <link rel="stylesheet" href="index.css" />
     <!--Chevron circle sheet-->
@@ -34,6 +42,30 @@
 
     <link
       href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -62,7 +94,11 @@
         <li><a href="">EMPLOYERS</a></li>
         <!--Search/Magnifying Glass ICON Location-->
         <li class="searchICON">
-          <a href=""><img src="/StaticLayout/assets/search.svg" alt="" /></a>
+          <span
+            class="iconify"
+            data-icon="dashicons:search"
+            data-inline="false"
+          ></span>
         </li>
         <!--Blue & Red Color Buttons-->
         <li class="blueSchBtn">
@@ -78,11 +114,16 @@
     <div class="video-sec">
       <!--Video is set to autoplay and loop...-->
       <video src="assets/EFA-home.mp4" autoplay="true" loop="true"></video>
-
-      <h1 id="overlay-1">ATTEND A FREE INTRO COURSE!</h1>
-      <a id="overlay-2" href="http://" target="_blank" rel="noopener noreferrer"
-        >LEARN MORE</a
-      >
+      <div class="container-overlay">
+        <h1 id="overlay-1">ATTEND A FREE INTRO COURSE!</h1>
+        <a
+          id="overlay-2"
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LEARN MORE<i class="fas fa-angle-right"></i
+        ></a>
+      </div>
     </div>
 
     <!--COURSE INFORMATION SECTION-->
@@ -91,12 +132,12 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <h2>Free Intro Courses - Online</h2>
+            <h2>Free Intro Courses -Online</h2>
             <p>
               Want to discover if you'd enjoy a career in coding or
               cybersecurity? Try one of our FREE intro courses from home.
             </p>
-            <div class="red-button">SIGN UP NOW></div>
+            <div class="red-button">SIGN UP NOW</div>
           </div>
           <div class="card">
             <h2>Full-Time 12/14- Week Courses</h2>
@@ -104,7 +145,7 @@
               Learn today's most relevant software development or cybersecurity
               skills to kick off a new career in the tech industry.
             </p>
-            <div class="red-button">FULL-TIME COURSES></div>
+            <div class="red-button">FULL-TIME COURSES</div>
           </div>
           <div class="card">
             <h2>Part-Time 24- Week Courses</h2>
@@ -113,7 +154,7 @@
               work while attending class virtually and on-site. Make money and
               change careers at the same time.
             </p>
-            <div class="red-button">PART-TIME COURSES></div>
+            <div class="red-button">PART-TIME COURSES</div>
           </div>
         </div>
       </div>
